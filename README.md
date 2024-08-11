@@ -11,11 +11,13 @@ This package is targetted for [Next.Js](https://nextjs.org/) projects using [sha
 -   Automatic system preference detection
 -   Automatic live updates, no page reload required
 -   Simple installation and usage
+-   Stores preference per client in a cookie
+    -   Planned: Callbacks for persistent storage per user
 
 ## Installation
 
 ```bash
-npm install --save nextjs-darkmode
+npm install --save simple-nextjs-darkmode
 ```
 
 ## Usage
