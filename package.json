@@ -1,0 +1,46 @@
+{
+    "name": "nextjs-darkmode",
+    "version": "1.0.0",
+    "description": "Simple, automatic dark mode for Next.Js",
+    "exports": {
+        "./*": "./lib/*.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "clean": "rm -rf lib"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mcmerdith/nextjs-darkmode.git"
+    },
+    "keywords": [
+        "darkmode",
+        "nextjs",
+        "shadcn"
+    ],
+    "author": "mcmerdith",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mcmerdith/nextjs-darkmode/issues"
+    },
+    "homepage": "https://github.com/mcmerdith/nextjs-darkmode#readme",
+    "dependencies": {
+        "cookies-next": "^4.2.1",
+        "server-only": "^0.0.1"
+    },
+    "devDependencies": {
+        "@types/react": "^18.2.0",
+        "@typescript-eslint/eslint-plugin": "^8.0.1",
+        "@typescript-eslint/parser": "^8.0.1",
+        "eslint": "^8.0.0",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "next": "^13.4.9",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "peerDependencies": {
+        "next": "^13.4.9",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}
