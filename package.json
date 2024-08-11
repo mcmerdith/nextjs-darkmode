@@ -1,5 +1,5 @@
 {
-    "name": "nextjs-darkmode",
+    "name": "simple-nextjs-darkmode",
     "version": "1.0.0",
     "description": "Simple, automatic dark mode for Next.Js",
     "exports": {
