@@ -1,4 +1,4 @@
-# nextjs-darkmode
+# simple-nextjs-darkmode
 
 This package is targetted for [Next.Js](https://nextjs.org/) projects using [shadcn/ui](https://ui.shadcn.com/), but may work with other ui frameworks depending on their implementation.
 
@@ -35,9 +35,9 @@ To override this, set the `data-darkmode-class` attribute to the class you want 
 React Server Components are the preferred way to use this package. Rendering dark mode on the server prevents a flash of light for dark mode users.
 
 ```tsx
-import { getServerDarkMode } from "nextjs-darkmode/server";
-import { DarkModeManager } from "nextjs-darkmode/client";
-import { DEFAULT_CLASS_NAME } from "nextjs-darkmode/constants";
+import { getServerDarkMode } from "simple-nextjs-darkmode/server";
+import { DarkModeManager } from "simple-nextjs-darkmode/client";
+import { DEFAULT_CLASS_NAME } from "simple-nextjs-darkmode/constants";
 
 export default function RootLayout({
     children,
@@ -67,7 +67,10 @@ Without React Server Components, an additional flag is required to force the dar
 ```tsx
 "use client";
 
-import { getClientDarkMode, DarkModeManager } from "nextjs-darkmode/client";
+import {
+    getClientDarkMode,
+    DarkModeManager,
+} from "simple-nextjs-darkmode/client";
 
 export default function RootLayout({
     children,
@@ -97,7 +100,7 @@ Allowing the user to change the dark mode preference is as simple as calling `up
 import {
     getClientPreference,
     updateUserPreference,
-} from "nextjs-darkmode/client";
+} from "simple-nextjs-darkmode/client";
 
 export default function UpdatePreference() {
     return (
